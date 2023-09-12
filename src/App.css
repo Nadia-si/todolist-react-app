@@ -78,3 +78,13 @@ h1 {
   color: #c5aeff;
   text-decoration: line-through;
 }
+
+.CheckButton {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+  margin-left: 12px;
+  height: 17px;
+  width: 17px;
+}

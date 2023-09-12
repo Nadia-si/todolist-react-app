@@ -16,14 +16,6 @@ export const TodoWrapper = () => {
     console.log(todos);
   };
 
-  const toggleComplete = (id) => {
-    setTodos(
-      todos.map((todo) =>
-        todo.id === id ? { ...todo, completed: !todo.completed } : todo
-      )
-    );
-  };
-
   const deleteTodo = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
@@ -55,7 +47,6 @@ export const TodoWrapper = () => {
           <Todo
             task={todo}
             key={index}
-            toggleComplete={toggleComplete}
             deleteTodo={deleteTodo}
             editTodo={editTodo}
           />

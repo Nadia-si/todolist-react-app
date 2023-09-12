@@ -18,6 +18,11 @@ export const Todo = ({ task, toggleComplete, deleteTodo, editTodo }) => {
           onClick={() => editTodo(task.id)}
         />
         <FontAwesomeIcon icon={faTrash} onClick={() => deleteTodo(task.id)} />
+        <input
+          type="checkbox"
+          className="CheckButton"
+          onChange={() => toggleComplete}
+        />
       </div>
     </div>
   );
